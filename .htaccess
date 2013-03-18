@@ -1,4 +1,7 @@
 # Kirby .htaccess
+# AY: enable .htaccess in Apache for Mac (2 parts to modify in httpd.conf):
+# http://chibimagic.wordpress.com/2009/02/27/apache-htaccess-mac-os-x/
+# sudo apachectl restart
 
 # rewrite rules
 <IfModule mod_rewrite.c>

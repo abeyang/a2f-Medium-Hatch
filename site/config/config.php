@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', '/');
+c::set('url', false);
 
 
 /* 
@@ -71,7 +71,7 @@ RewriteBase /subfolder
  
 */
 
-c::set('subfolder', '/a2f-Medium-Hatch');
+c::set('subfolder', false);
 
 
 /* 
@@ -87,11 +87,9 @@ Kirby will then switch to urls like this:
 
 http://yourdomain.com/index.php/about
 
-TODO: need to set to true when we go live (-AY)
-
 */
 
-c::set('rewrite', false);
+c::set('rewrite', true);
 
 
 /* 
