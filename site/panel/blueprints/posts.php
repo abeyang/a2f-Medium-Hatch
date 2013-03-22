@@ -1,6 +1,6 @@
-# Blueprints for the posts overview page
+# Blueprints for the post listing
 
-title: posts overview page
+title: Post Listing (Recaps)
 pages: true
 	template: post
 	sort: flip
@@ -10,11 +10,5 @@ fields:
 	title:
 		label: title
 		type: text
-		help: The title of the posts overview page.
+		help: Posts are meant for recaps, past events, posting photos, and the like.
 		required: true    
-	description:
-		label: description
-		type: textarea
-		size: small
-		help: The description of the posts overview page.
-		required: true

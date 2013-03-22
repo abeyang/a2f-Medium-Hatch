@@ -6,7 +6,7 @@ Author: a2f Riverside
 
 ----
 
-Footer: &copy; 2010-2013
+Footer: 
 
 ----
 

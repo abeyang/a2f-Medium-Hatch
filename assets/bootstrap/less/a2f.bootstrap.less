@@ -55,13 +55,13 @@
 // @import "popovers.less";
 
 // Components: Misc
-@import "thumbnails.less";
-@import "media.less";
-@import "labels-badges.less";
-@import "progress-bars.less";
-@import "accordion.less";
-@import "carousel.less";
-@import "hero-unit.less";
+// @import "thumbnails.less";
+// @import "media.less";
+// @import "labels-badges.less";
+// @import "progress-bars.less";
+// @import "accordion.less";
+// @import "carousel.less";
+// @import "hero-unit.less";
 
 // Utility classes
 @import "utilities.less"; // Has to be last to override when necessary
@@ -87,6 +87,8 @@
 @default-fontsize: 18px;
 @default-lineheight: 1.4;
 @default-lineheight-header: 1.1;
+
+@small-fontsize: 14px;
 
 // Spacing
 
@@ -119,15 +121,16 @@ h1, h2 {
 	font-size: @default-fontsize * 2.5;
 }
 
+.subtext {
+	font-size: @small-fontsize;
+}
+
 .sidebar {
 	p, div, span {
 		font-family: "Opan Sans", sans-serif;
 		color: @white;
 	}
 	
-	.lighten {
-		.opacity(40);
-	}
 }
 
 // ============================================================================================================
@@ -147,4 +150,46 @@ a {
 		color: lighten(@link, 10);
 		text-decoration: none;
 	}
+}
+
+.lighten {
+	.opacity(40);
+}
+
+// Sidebar
+@sidebarcolumns: 3;
+@sidebarwidth: (@fluidGridColumnWidth * @sidebarcolumns) + (@fluidGridGutterWidth * (@sidebarcolumns - 1)) + 1;
+.sidebar {
+	background-color: @black;
+	position: absolute;
+	width: @sidebarwidth;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	// width: 250px;
+	
+	.section {
+		border-top: 1px solid #2A2928;
+		padding-top: @pagemargin;
+		margin-top: @pagemargin;
+	}
+}
+
+// TODO: DELETE ME
+.fauxsidebar {
+	height: 300px;
+	background-color: #0090ff;
+}
+
+// Homepage
+
+header {
+	height: 260px;
+	background-color: lighten(@black, 50);
+}
+
+.news {
+	height: 280px;
+	background-color: @accent;
+	color: @white;
 }

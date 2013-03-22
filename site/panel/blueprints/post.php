@@ -1,33 +1,28 @@
-# Blueprints for an post
+# Blueprints for a post (recap)
 
 title: post
 pages: false
 files: true
 fields:
 	title:
-		label: title
+		label: Title
 		type: text
-		help: The title of your post.
 		required: true    
-	description:
-		label: description
-		type: textarea
-		size: small
-		help: Short description of your post.
-		required: true
 	published:
-		label: published
+		label: Published
 		type: date
-		format: mm/dd/yy
+		format: yy-mm-dd
 		required: true
+	thumbnail:
+		label: Thumbnail URL
+		type: text
+		help: http://farm9.staticflickr.com/8529/8561716508_a22bed1031_z.jpg
 	text:
-		label: your content
+		label: content
 		type: textarea
 		size: large
-		help: Your content.
 		required: true
 		buttons: 
-			- h1
 			- h2
 			- h3
 			- bold
@@ -35,7 +30,6 @@ fields:
 			- email
 			- link
 	tags:
-		label: tags
+		label: Tags
 		type: text
-		help: Your Tags (Tag One, Tag Two, Tag 3).
-		required: true
+		help: Tag One, Tag Two, Tag 3
