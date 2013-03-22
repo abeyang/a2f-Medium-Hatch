@@ -3,6 +3,8 @@
 // direct access protection
 if(!defined('KIRBY')) die('Direct access is not allowed');
 
+c::set('production', false);
+
 /* 
 
 ---------------------------------------
@@ -272,6 +274,7 @@ Make sure to keep this disabled for your
 production site, so you won't get nasty 
 php errors there.
 
+TODO: set to false in production (-AY)
 */
 
 c::set('debug', true);

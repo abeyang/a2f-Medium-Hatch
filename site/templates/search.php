@@ -3,7 +3,7 @@
 $search = new search(array(
   'searchfield' => 'q',
   'words' => true,
-  'in' => 'articles',
+  'in' => 'posts',
   'paginate'    => 10
 ));
 
@@ -13,7 +13,7 @@ $results = $search->results();
 
 <?php
 
-$blog = $pages->find('articles');
+$blog = $pages->find('posts');
 $tags = tagcloud($blog);
 
 ?>
@@ -23,7 +23,7 @@ $tags = tagcloud($blog);
 <?php snippet('navigation') ?>
 
 <!-- Search -->
-<div class="grid">
+<div class="container">
 	<div class="row">
 		<div class="slot-6-7-8-9">
 			<form action="<?php echo thisURL() ?>">
@@ -36,7 +36,7 @@ $tags = tagcloud($blog);
 	<?php foreach($results as $result): ?>
 	<div class="row">
 		<div class="slot-6-7-8-9">
-			<h1 class="article-title"><a href="<?php echo $result->url() ?>"><?php echo $result->title() ?></a></h1>
+			<h1 class="post-title"><a href="<?php echo $result->url() ?>"><?php echo $result->title() ?></a></h1>
 			<p>
 				<?php echo $result->description() ?> <?php echo excerpt($result->text(), 300) ?> [...] <a href="<?php echo $result->url() ?>">Read more.</a>
 			</p>				

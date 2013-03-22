@@ -1,15 +1,16 @@
-<?php snippet('header') ?>
+<? 
+// ====================================================================
+// Homepage
+// ====================================================================
 
-<?php snippet('navigation') ?>
+snippet('header'); 
+?>
 
-<!--About-->
-<div class="grid">	
-	<div class="row">		
-		<div class="slot-6-7-8-9">			
-			<?php echo kirbytext($page->text()) ?>				
-		</div>
-	</div>	
+<? snippet('navigation') ?>
+
+<div class="container">	
+	<?= kirbytext($page->text()) ?>				
 </div>
 
 
-<?php snippet('footer') ?>
+<? snippet('footer') ?>

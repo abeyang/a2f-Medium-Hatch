@@ -1,9 +1,13 @@
-Title: Your Page Title blah
+﻿Title: acts2fellowship Riverside
+
 ----
-Author: First & Last Name | http://yourdomain.com (for meta tags)
+
+Author: a2f Riverside
+
 ----
-Copyright: © 2011-2012 Your Name, all rights reserved.
+
+Footer: &copy; 2010-2013
+
 ----
-Googleauthor: First & Last Name (for Google+ and Google Search)
-----
-Twitter: username (your Twitter username without the @ for social sharing)
+
+Disqus: USERNAME
