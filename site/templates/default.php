@@ -8,23 +8,24 @@ snippet('header');
 
 <? snippet('sidebar') ?>
 
-<div class="container-fluid">	
-	<div class="row-fluid">
-		<!-- <div class="span3 fauxsidebar">
-			<div>
-				FAke Sidebar
-			</div>
-		</div> -->
-		<div class="span9 offset3">
-			<header>
-				<h2><?= kirbytext($site->title()) ?></h2>
-				<?= kirbytext($page->description()) ?>
-			</header>
-			<div class="news">
-				<?= kirbytext($page->news_label()) ?>
-			</div>
-			<div class="posts">
-				<div><?= kirbytext($page->posts_label()) ?></div>
+<div class="wrapper">
+	<header>
+		<div class="container">	
+			<h2><?= kirbytext($site->title()) ?></h2>
+			<?= kirbytext($page->description()) ?>
+		</div>
+	</header>
+	<div class="news">
+		<div class="container">	
+			<?= kirbytext($page->news_label()) ?>
+		</div>
+	</div>
+	<div class="container faux">	
+		<div class="row">
+			<div class="span9">
+				<div class="posts">
+					<div><?= kirbytext($page->posts_label()) ?></div>
+				</div>
 			</div>
 		</div>
 	</div>

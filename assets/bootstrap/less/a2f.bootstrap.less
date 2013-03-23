@@ -90,11 +90,15 @@
 
 @small-fontsize: 14px;
 
-// Spacing
+// Spacing + widths
 
 @border: 1px solid #e8e8e8;
 @margin: 10px;
 @pagemargin: 20px;
+
+// @sidebarcolumns: 3;
+// @sidebarwidth: (@fluidGridColumnWidth * @sidebarcolumns) + (@fluidGridGutterWidth * (@sidebarcolumns - 1)) + 1;
+@sidebarwidth: 250px;
 
 // ============================================================================================================
 //
@@ -141,8 +145,6 @@ h1, h2 {
 
 // General tags + classes
 
-body { margin-top: @pagemargin; }
-
 a {
 	color: @link;
 	
@@ -156,9 +158,12 @@ a {
 	.opacity(40);
 }
 
+.wrapper {
+	margin-left: @sidebarwidth;
+}
+
 // Sidebar
-@sidebarcolumns: 3;
-@sidebarwidth: (@fluidGridColumnWidth * @sidebarcolumns) + (@fluidGridGutterWidth * (@sidebarcolumns - 1)) + 1;
+
 .sidebar {
 	background-color: @black;
 	position: absolute;
@@ -176,8 +181,7 @@ a {
 }
 
 // TODO: DELETE ME
-.fauxsidebar {
-	height: 300px;
+.faux {
 	background-color: #0090ff;
 }
 
