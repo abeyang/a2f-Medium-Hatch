@@ -8,8 +8,8 @@
 # From Abe: use md5 generator:
 # http://md5generator.net/
 
-name: Brian Koo
-username: bkoo
-password: d7a84628c025d30f7b2c52c958767e76
+name: Brian Wang
+username: bwang
+password: 3bf288253e36d5d4316329369188402f
 encrypt:  md5
 language: en
