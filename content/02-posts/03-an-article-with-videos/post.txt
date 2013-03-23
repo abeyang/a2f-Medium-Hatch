@@ -2,15 +2,17 @@
 
 ----
 
-Description: A management summary of your post.
-
-----
-
 Published: 2013-03-22
 
 ----
 
+Thumbnail: http://farm9.staticflickr.com/8529/8561716508_a22bed1031_c.jpg
+
+----
+
 Text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+(email: abeyang@gmail.com text: Abe Yang)
 
 You can use my lightweight and easy-to-use CSS solution for fluid width for video embeds (link: https://github.com/niklausgerber/FitMyVideo text: FitMyVideo popup: yes) to display responsive videos. (email: abeyang@gmail.com text: Abe Yang)
 

@@ -8,6 +8,14 @@ snippet('header');
 
 <? snippet('sidebar') ?>
 
+<?
+	$posts = $pages->find('posts')
+                  ->children()
+                  ->visible()
+                  ->flip()
+                  ->paginate(10);
+?>
+
 <div class="wrapper">
 	<header>
 		<div class="container">	
@@ -24,7 +32,12 @@ snippet('header');
 		<div class="row">
 			<div class="span9">
 				<div class="posts">
-					<div><?= kirbytext($page->posts_label()) ?></div>
+					<div>
+						<!-- <?= kirbytext($page->posts_label()) ?> -->
+						<? foreach($posts as $post): ?>
+						<div><img src="<?= $post->thumbnail() ?>"></div>
+						<? endforeach ?>
+					</div>
 				</div>
 			</div>
 		</div>
