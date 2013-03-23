@@ -32,10 +32,10 @@ snippet('header');
 		<div class="row">
 			<div class="span9">
 				<div class="posts">
-					<div>
+					<div class="row">
 						<!-- <?= kirbytext($page->posts_label()) ?> -->
 						<? foreach($posts as $post): ?>
-						<div><img src="<?= $post->thumbnail() ?>"></div>
+						<img class="span3" src="<?= $post->thumbnail() ?>">
 						<? endforeach ?>
 					</div>
 				</div>
