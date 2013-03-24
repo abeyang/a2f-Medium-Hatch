@@ -31,5 +31,10 @@ fields:
 			- link
 	tags:
 		label: Tags
-		type: text
-		help: Tag One, Tag Two, Tag 3
+		type: tags 
+		help: Tag video, photos, signup
+		data:
+		  - video
+		  - photos
+		  - signup
+
