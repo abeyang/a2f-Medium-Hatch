@@ -18,9 +18,11 @@ snippet('header');
 
 <div class="wrapper">
 	<header>
-		<div class="container">	
-			<h2><?= kirbytext($site->title()) ?></h2>
-			<?= kirbytext($page->description()) ?>
+		<div class="container">
+			<div class="imagecontent">
+				<h2><?= kirbytext($site->title()) ?></h2>
+				<?= kirbytext($page->description()) ?>				
+			</div>
 		</div>
 	</header>
 	<div class="news">

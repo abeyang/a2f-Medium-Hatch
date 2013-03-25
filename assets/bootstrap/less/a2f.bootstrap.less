@@ -162,6 +162,13 @@ a {
 	margin-left: @sidebarwidth;
 }
 
+// For text inside images
+// Parent container needs to have "position: relative"
+.imagecontent {
+	position: absolute;
+	bottom: 0;
+}
+
 // Sidebar
 
 .sidebar {
@@ -190,6 +197,7 @@ a {
 header {
 	height: 260px;
 	background-color: lighten(@black, 50);
+	position: relative;		// necessary for text inside image to be anchored to the bottom
 }
 
 .news {
