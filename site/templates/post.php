@@ -1,12 +1,15 @@
 <?php snippet('header') ?>
 
+
 <?php snippet('navigation') ?>
 
 <!--post-->
 <div class="container">	
 	<div class="row">		
 		<div class="slot-6-7-8-9">
-			<p class="date"><?php echo html($page->published()) ?></p>
+			<p class="date"><?php echo html($page->published()) 
+			//translate_date($page->published())?></p>
+
 			<h1 class="post-title"><a href="<?php echo $page->url() ?>"><?php echo html($page->title()) ?></a></h1>			
 			<?php echo kirbytext($page->text()) ?>
 			<p>

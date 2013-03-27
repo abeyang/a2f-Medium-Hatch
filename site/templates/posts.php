@@ -1,7 +1,5 @@
 <? snippet('header') ?>
-
 <? snippet('navigation') ?>
-
 <!--post-->
 <div class="container">
 	<? if(param('tag')) {
@@ -25,7 +23,11 @@
 	<? foreach($posts as $post): ?>
 	<div class="row">		
 		<div class="slot-6-7-8-9">
-			<p class="date"><? echo html($post->published()) ?></p>
+			<p class="date"><? //echo html($post->published()) ?></p> 
+			<p class="date"><? translate_date($post->published());
+ ?></p>  
+
+
 			<h1 class="post-title"><a href="<? echo $post->url() ?>"><? echo html($post->title()) ?></a></h1>
 			<p>
 				<? echo $post->description() ?> <? echo excerpt($post->text(), 800) ?> <a href="<? echo $post->url() ?>">Read more</a>
