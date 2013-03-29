@@ -16,6 +16,13 @@ snippet('header');
                   ->paginate(10);
 ?>
 
+<?php if($page->hasImages()): ?> 
+<ul class="gallery">
+  <?php $image = $page->images()  ?>
+  <li><img src="<?php echo $image[date("d")%sizeof($image)]->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>"  /></li>
+</ul>
+<?php endif ?>
+
 <div class="wrapper">
 	<header>
 		<div class="container">
