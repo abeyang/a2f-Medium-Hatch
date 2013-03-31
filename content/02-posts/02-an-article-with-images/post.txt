@@ -13,10 +13,7 @@ Thumbnail: http://farm9.staticflickr.com/8390/8503397983_a4775bb438_c.jpg
 Text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 
 (image: http://placehold.it/350x150 text: 300x150)
-(image: http://placehold.it/700x300 text: 700x300)
-(image: http://placehold.it/1400x600 text: 1400x600)
-(image: http://placehold.it/2800x1200 text: 2800x120)
 
 ----
 
-Tags: Image, post
+Tags: Image,post

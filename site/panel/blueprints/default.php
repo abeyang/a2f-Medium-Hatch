@@ -21,6 +21,13 @@ fields:
 			- bold
 			- italic
 			- link
+	picture_url:
+		label: picture URLs
+		type: textarea
+		size: small
+		help: Label for the website banner picture
+		required: true
+		
 	news_label:
 		label: news label
 		type: text

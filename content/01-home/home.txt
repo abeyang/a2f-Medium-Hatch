@@ -6,6 +6,10 @@ Description: Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit lib
 
 ----
 
+Picture_url: http://farm9.staticflickr.com/8505/8590983277_13a72cca35.jpg,http://farm9.staticflickr.com/8507/8588768470_d99f2e0b35_c.jpg,http://farm9.staticflickr.com/8368/8567405816_d7d091e2f9_b.jpg
+
+----
+
 News_label: upcoming / featured
 
 ----
