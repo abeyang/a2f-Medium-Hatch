@@ -167,6 +167,7 @@ a {
 .imagecontent {
 	position: absolute;
 	bottom: 0;
+	color: @white;
 }
 
 // Sidebar
@@ -207,7 +208,15 @@ header {
 }
 
 .posts {
-	img {
+	.post {
+		margin-top: @pagemargin;
 		height: 330px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	img {
+		// min-width: 100%;
+		max-width: none;
 	}
 }

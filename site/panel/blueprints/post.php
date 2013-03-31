@@ -16,7 +16,7 @@ fields:
 	thumbnail:
 		label: Thumbnail URL
 		type: text
-		help: http://farm9.staticflickr.com/8529/8561716508_a22bed1031_z.jpg
+		help: eg, http://farm9.staticflickr.com/8529/8561716508_a22bed1031_z.jpg
 	text:
 		label: content
 		type: textarea
@@ -29,6 +29,10 @@ fields:
 			- italic
 			- email
 			- link
+	gallery_url:
+		label: Flickr Gallery URL
+		type: text
+		help: eg, http://www.flickr.com/photos/gracepointriverside/sets/72157633007483678/
 	tags:
 		label: Tags
 		type: tags 
