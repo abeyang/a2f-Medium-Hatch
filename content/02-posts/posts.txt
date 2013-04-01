@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿Title: Posts
+=======
+﻿Title: Post
+>>>>>>> 38ee66c54465eedfa6f5a81ae08af939deb81069

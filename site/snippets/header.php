@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<?php
+
+        function translate_date($temp) {
+                $date_p = explode("-",$temp);
+                if(isset($date_p[1])) {
+                        $m=$date_p[1];
+                        echo date("F", mktime(0, 0, 0, $m));
+                }
+                if(isset($date_p[2])) {
+                        $d=$date_p[2];
+                        echo " ".$d.","." ";
+                }
+                if(isset($date_p[0])) {
+                        $y=$date_p[0];
+                        echo $y;
+                }
+}
+?>
+
 <html lang="en-">
 <head>
 	<meta charset="utf-8" />

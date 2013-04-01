@@ -21,7 +21,17 @@ fields:
 			- bold
 			- italic
 			- link
+<<<<<<< HEAD
 			- bkoo_stinks
+=======
+	picture_url:
+		label: picture URLs
+		type: textarea
+		size: small
+		help: Label for the website banner picture
+		required: true
+		
+>>>>>>> 38ee66c54465eedfa6f5a81ae08af939deb81069
 	news_label:
 		label: news label
 		type: text

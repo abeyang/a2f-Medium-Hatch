@@ -162,16 +162,24 @@ a {
 	margin-left: @sidebarwidth;
 }
 
+// For text inside images
+// Parent container needs to have "position: relative"
+.imagecontent {
+	position: absolute;
+	bottom: 0;
+	color: @white;
+}
+
 // Sidebar
 
 .sidebar {
 	background-color: @black;
-	position: absolute;
+	position: fixed;
+	overflow-y: scroll;
 	width: @sidebarwidth;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	// width: 250px;
 	
 	.section {
 		border-top: 1px solid #2A2928;
@@ -190,10 +198,25 @@ a {
 header {
 	height: 260px;
 	background-color: lighten(@black, 50);
+	position: relative;		// necessary for text inside image to be anchored to the bottom
 }
 
 .news {
 	height: 280px;
 	background-color: @accent;
 	color: @white;
+}
+
+.posts {
+	.post {
+		margin-top: @pagemargin;
+		height: 330px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	img {
+		// min-width: 100%;
+		max-width: none;
+	}
 }
