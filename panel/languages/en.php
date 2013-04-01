@@ -198,6 +198,7 @@ l::set(array(
   'form.buttons.italic.sample' => 'italic text',
   'form.buttons.link' => 'link',
   'form.buttons.email' => 'email',
+  'form.buttons.event' => 'event',
 
   'form.overlay.link.title' => 'Insert Link',
   'form.overlay.link.link' => 'Link',
@@ -208,5 +209,13 @@ l::set(array(
   'form.overlay.email.link' => 'Email Address',
   'form.overlay.email.text' => 'Link Text (optional)',
   'form.overlay.email.button' => 'Insert Email',
+
+  'form.overlay.event.title' => 'Insert Event',
+  'form.overlay.event.name' => 'Insert event name',
+  'form.overlay.event.date' => 'Insert event date',
+  'form.overlay.event.time' => 'Insert event time',
+  'form.overlay.event.location' => 'Insert event location',
+  'form.overlay.event.miscinfo' => 'Insert misc info',
+  'form.overlay.event.button' => 'Insert Event',
   
 ));

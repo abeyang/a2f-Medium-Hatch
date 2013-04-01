@@ -21,6 +21,7 @@ fields:
 			- bold
 			- italic
 			- link
+			- bkoo_stinks
 	news_label:
 		label: news label
 		type: text

@@ -29,6 +29,7 @@ fields:
 			- italic
 			- email
 			- link
+			- event
 	tags:
 		label: Tags
 		type: text

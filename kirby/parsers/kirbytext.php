@@ -333,7 +333,7 @@ class kirbytext {
 
   }
 
-  static function twitter($params) {
+   static function twitter($params) {
     
     $username = @$params['twitter'];
     $class    = @$params['class'];

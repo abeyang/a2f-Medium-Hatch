@@ -34,8 +34,8 @@ $action = action::updateURL();
   <?php if($page->isHomePage()): ?>
   <em class="empty"><?php echo l::get('options.home.text') ?></em>
   <?php else: ?>
-  <em class="empty"><?php echo l::get('options.error.text') ?></em>  
-  <?php endif ?>
+  <em class="empty"><?php echo l::get('options.error.text') ?></em>  <?php 
+endif ?>
 </div>
 <?php endif ?>
 

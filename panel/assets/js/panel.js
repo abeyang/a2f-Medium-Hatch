@@ -244,19 +244,46 @@ $(function() {
 
       var linkField = modal.find('input[name=link]');
       var textField = modal.find('input[name=text]');
-      
+      var nameField = modal.find('input[name=name]');
+      var dateField = modal.find('input[name=date]');
+      var timeField = modal.find('input[name=time]');
+      var locationField = modal.find('input[name=location]');
+      var miscField = modal.find('input[name=misc]');
+           
       var tag  = modal.attr('data-tag');
       var link = $.trim(linkField.val());     
       var text = $.trim(textField.val());     
+      var name = $.trim(nameField.val());
+      var date = $.trim(dateField.val());
+      var time = $.trim(timeField.val());
+      var location = $.trim(locationField.val());
+      var misc = $.trim(miscField.val());
 
       linkField.val('');
       textField.val('');
+      nameField.val('');
+      dateField.val('');
+      timeField.val('');
+      locationField.val('');
+      miscField.val('');
 
-      if(!link.length) return this.insert('');
+      if(!link.length)
+      {
+      	if(!name.length) return this.insert('');
+      	else 
+      	{
+      		if(name) 
+      		{
+      			return this.insert('(' + tag + ': ' + name + ' date: ' + date + ' time: '+ time + ' location: ' + location + ' misc: ' + misc + ')'); 
+      		}
+      	}
+      }
       
       if(!text.length || text == link) {
         return this.insert('<' + link + '>');
-      } else {
+      }
+      
+      else {
         return this.insert('(' + tag + ': ' + link + ' text: ' + text + ')');
       }
 

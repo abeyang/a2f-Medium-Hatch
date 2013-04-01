@@ -2792,7 +2792,6 @@ class str {
     $text = ($text) ? $text : $link;
     return '<a href="' . $link . '">' . str::html($text) . '</a>';
   }
-
   /**
     * Shortens a string and adds an ellipsis if the string is too long
     *
