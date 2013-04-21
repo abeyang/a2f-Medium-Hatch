@@ -116,7 +116,7 @@ body, div, p, input {
 }
 
 h1,h2,h3,h4,h5,h6,button {
-	font-family: "Opan Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	line-height: @default-lineheight-header;
 	color: @black;
 }
@@ -132,7 +132,7 @@ h1, h2 {
 
 .sidebar {
 	p, div, span {
-		font-family: "Opan Sans", sans-serif;
+		font-family: "Open Sans", sans-serif;
 		color: @white;
 	}
 	
@@ -192,10 +192,7 @@ a {
 	
 }
 
-// TODO: DELETE ME
-.faux {
-	background-color: #0090ff;
-}
+
 
 // Homepage
 
@@ -223,11 +220,23 @@ header {
 	.post {
 		background-color: @white;
 		height: 200px;
-		
-		
 
 	} 	
+	
+	.sectionHeader {
+		color: @white;
+		text-transform: capitalize;	
+	}
 }
+
+
+.container {
+	.sectionHeader2 {
+		text-transform: capitalize;
+	}	
+
+}
+
 
 .posts {
 	.post {
@@ -235,13 +244,29 @@ header {
 		height: 330px;
 		position: relative;
 		overflow: hidden;
-	}
 
-	img {
-		// min-width: 100%;
-		max-width: none;
+		img {
+			// min-width: 100%;
+			max-width: none;
+		}
+		
+		.imagecontent {
+			.postTitle {
+				font-size: @default-fontsize;	
+				color: @white;
+				padding: 0px 10px 0px 10px;
+				margin: 0px 0px 4px 0px;
+			}
+			.author {
+				font-family: "Lora", serif;
+				font-size: @small-fontsize;
+				color: @white;
+				padding: 0px 10px 15px 10px;
+			}
+		}
 	}
 }
+
 
 // Individual posts
 
@@ -257,3 +282,4 @@ header {
 
 
 }
+

@@ -52,9 +52,17 @@ snippet('header');
 			<!-- </div> -->
 			</div>
 		<!-- </div> -->
+		<div class="container">
+			<span class="sectionHeader">	
+				<?= $page->news_label() ?>
+			</span>
+		</div>
+
 	</div>
-	<div class="container faux">	
-		<?= $page->posts_label() ?>
+	<div class="container faux">
+		<span class="sectionHeader2">	
+			<?= $page->posts_label() ?>
+		</span>
 		<div class="row">
 			<div class="span12">
 				<div class="posts">
@@ -64,7 +72,8 @@ snippet('header');
 						<div class="span3 post">
 							<img src="<?= $post->thumbnail() ?>">
 							<div class="imagecontent">
-								<h3><?= $post->title() ?></h3>
+								<h3 class="postTitle"><?= $post->title() ?></h3>
+								<div class="author">Abe Yang</div>
 
 							</div>
 						</div>
