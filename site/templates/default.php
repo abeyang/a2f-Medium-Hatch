@@ -6,7 +6,7 @@
 snippet('header'); 
 ?>
 
-<? snippet('sidebar') ?>
+<? //snippet('sidebar') ?>
 
 <?
 	$posts = $pages->find('posts')
@@ -38,7 +38,7 @@ snippet('header');
 	<div class="container faux">	
 		<?= $page->posts_label() ?>
 		<div class="row">
-			<div class="span9">
+			<div class="span12">
 				<div class="posts">
 					<div class="row">
 						<!-- <?= kirbytext($page->posts_label()) ?> -->
