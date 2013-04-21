@@ -29,8 +29,8 @@ fields:
 			- italic
 			- email
 			- link
-			- event
 <<<<<<< HEAD
+			- event
 =======
 	gallery_url:
 		label: Flickr Gallery URL
