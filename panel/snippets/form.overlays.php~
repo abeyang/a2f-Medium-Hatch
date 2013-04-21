@@ -37,7 +37,7 @@
       </div>  
       <div class="field">
         <label><?php echo l::get('form.overlay.event.time') ?></label>
-     <input type="text" name="time" class="input" />      
+     <input type="time" name="time" class="input" />      
 	  </div>  
       <div class="field">
         <label><?php echo l::get('form.overlay.event.location') ?></label>
