@@ -31,9 +31,27 @@ snippet('header');
 		</div>
 	</header>
 	<div class="news">
-		<div class="container">	
+		<!--<div class="container">	-->
 			<?= $page->news_label() ?>
-		</div>
+			<div class="box">
+			<!--<div class="row"> -->
+					<div class="blankpost span4">
+					</div>
+					<div class="post span4 offset 2">
+					Post	
+					</div>
+					<div class="post span4">
+					post 2
+					</div>
+					<div class="post span4">
+					post 3
+					</div>
+					<div class="post span4">
+					post 
+				</div>
+			<!-- </div> -->
+			</div>
+		<!-- </div> -->
 	</div>
 	<div class="container faux">	
 		<?= $page->posts_label() ?>
