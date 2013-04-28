@@ -56,18 +56,16 @@
 
 	<meta itemprop="name" content="<?= html($page->title()) ?> | <?= html($site->title()) ?>">
 	<meta itemprop="description" content="<?= html($page->description()) ?>">
-		
+
+	<!-- LESS -->
+
 	<link rel="stylesheet/less" type="text/css" href="<?= url('assets/styles/a2f.bootstrap.less') ?>" />
     <?= js('assets/js/less-1.3.3.min.js') ?>
-    
-    <script type="text/javascript">
+
+    <script>
 	    less.env = "development";
 	    less.watch();
 	</script>
-
-	<!--jQuery Plugin-->
-	<?= js('assets/js/jquery-1.9.1.min.js') ?>
-	<?= js('assets/js/jquery.pageslide.min.js') ?>
 
 	<!--Google Webfonts-->
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>

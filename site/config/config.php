@@ -91,7 +91,7 @@ http://yourdomain.com/index.php/about
 
 */
 
-c::set('rewrite', false);
+c::set('rewrite', true);
 
 
 /* 

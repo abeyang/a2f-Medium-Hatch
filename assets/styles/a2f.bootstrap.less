@@ -162,79 +162,59 @@ a {
 
 // For text inside images
 // Parent container needs to have "position: relative"
+// AY: need to rethink this... text/content itself should be _outside_ of this
 .imagecontent {
 	position: absolute;
 	bottom: 0;
 	color: @white;
 }
 
-// Sidebar
-
-.sidebar {
-	background-color: @black;
-	position: fixed;
-	overflow-y: scroll;
-	width: @sidebarwidth;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	
-	.section {
-		border-top: 1px solid #2A2928;
-		padding-top: @pagemargin;
-		margin-top: @pagemargin;
-	}
-	
-	.menu {
-			
-	}
-	
-	
-}
-
-
 
 // Homepage
 
-header {
-	height: 260px;
-	background-color: lighten(@black, 50);
-	position: relative;		// necessary for text inside image to be anchored to the bottom
-}
-
-.news {
-	height: 280px;
-	background-color: @accent;
-	color: @white;
-	overflow: hidden;
-	white-space: nowrap;
-	
-	.box {
-		width: 2000px;
-		
+.homepage {
+	header {
+		height: 260px;
+		background-color: lighten(@black, 50);
+		position: relative;		// necessary for text inside image to be anchored to the bottom
 	}
-	.blankpost {
-		width: 200px;
-		float: left;
-	}
-	.post {
-		background-color: @white;
-		height: 200px;
 
-	} 	
-	
-	.sectionHeader {
+	.news {
+		height: 280px;
+		background-color: @accent;
 		color: @white;
-		text-transform: uppercase;	
+		overflow: hidden;
+		white-space: nowrap;
+		
+		.box {
+			width: 2000px;
+			
+		}
+		.blankpost {
+			width: 200px;
+			float: left;
+		}
+		.post {
+			background-color: @white;
+			height: 200px;
+
+		} 	
+		
+		h4 {
+			color: @white;
+			font-weight: 400;
+			text-transform: uppercase;	
+		}
 	}
-}
 
+	// AY: to Jordan -- why separate into sectionHeader and sectionHeader2?
+	// (I've replaced the former with h4)
+	.container {
+		.sectionHeader2 {
+			text-transform: uppercase;
+		}	
 
-.container {
-	.sectionHeader2 {
-		text-transform: uppercase;
-	}	
-
+	}
 }
 
 
@@ -279,7 +259,36 @@ header {
 	border: @border;
 	margin: @margin;
 
+}
 
+// ============================================================================================================
+//
+// FRAMEWORK-SPECIFIC
+//
+// ============================================================================================================
 
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+
+    /* Specify the width of your pageslide here */
+    width: @sidebarwidth;
+    padding: 20px;
+    
+    /* These styles are optional, and describe how the pageslide will look */
+    background-color: @black;
+    color: @white;
+    overflow-y: scroll;
+}
+
+// Sidebar: thanks to pageslide.js, #sidebar will be a child of #pageslide
+
+#sidebar {
+	display: none;
 }
 

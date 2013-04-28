@@ -6,7 +6,7 @@
 snippet('header'); 
 ?>
 
-<? //snippet('sidebar') ?>
+<? snippet('sidebar') ?>
 
 <?
 	$posts = $pages->find('posts')
@@ -18,44 +18,50 @@ snippet('header');
 
 
 
-<div class="wrapper">
+<div class="wrapper homepage">
 	<header>
 		<div class="container">
-			<div class="imagecontent">
- 			<!-- Banner picture backend code 2 lines -->
-				<?php $image = explode(',',$page->picture_url()); ?>
-  				<img src="<?php echo $image[date("d")%sizeof($image)] ?>">  
-				<h2><?= $site->title() ?></h2>
-				<?= $page->description() ?>
+			<div class="row">
+				<div class="span1">
+					<a class="logo" href="#sidebar">A2F</a>
+				</div>
+
+				<div class="span10">
+					<div class="imagecontent">
+		 			<!-- Banner picture backend code 2 lines -->
+						<?php $image = explode(',',$page->picture_url()); ?>
+		  				<img src="<?php echo $image[date("d")%sizeof($image)] ?>">  
+						<h2><?= $site->title() ?></h2>
+						<?= $page->description() ?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 	<div class="news">
-		<!--<div class="container">	-->
-			<?= $page->news_label() ?>
-			<div class="box">
-			<!--<div class="row"> -->
-					<div class="blankpost span4">
-					</div>
-					<div class="post span4 offset 2">
-					Post	
-					</div>
-					<div class="post span4">
-					post 2
-					</div>
-					<div class="post span4">
-					post 3
-					</div>
-					<div class="post span4">
-					post 
+		<div class="container">	
+			<div class="row">
+				<h4 class="span10 offset1"><?= $page->news_label() ?></h4>
+			</div>
+		</div>
+
+		<div class="box">
+		<!--<div class="row"> -->
+				<div class="blankpost span4">
 				</div>
-			<!-- </div> -->
+				<div class="post span4 offset 2">
+				Post	
+				</div>
+				<div class="post span4">
+				post 2
+				</div>
+				<div class="post span4">
+				post 3
+				</div>
+				<div class="post span4">
+				post 
 			</div>
 		<!-- </div> -->
-		<div class="container">
-			<span class="sectionHeader">	
-				<?= $page->news_label() ?>
-			</span>
 		</div>
 
 	</div>
@@ -64,7 +70,7 @@ snippet('header');
 			<?= $page->posts_label() ?>
 		</span>
 		<div class="row">
-			<div class="span12">
+			<div class="span10 offset1">
 				<div class="posts">
 					<div class="row">
 						<!-- <?= kirbytext($page->posts_label()) ?> -->
