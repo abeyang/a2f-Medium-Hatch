@@ -14,12 +14,6 @@ Text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy e
 
 (email: abeyang@gmail.com text: Abe Yang)
 
+(event: TFN date: 2013-04-28 time: 7pm location: 104 MSE misc: )
+
 You can use my lightweight and easy-to-use CSS solution for fluid width for video embeds (link: https://github.com/niklausgerber/FitMyVideo text: FitMyVideo popup: yes) to display responsive videos. (email: abeyang@gmail.com text: Abe Yang)
-
-----
-
-Gallery_url: http://www.flickr.com/photos/gracepointriverside/sets/72157633007483678/
-
-----
-
-Tags: Video,post
