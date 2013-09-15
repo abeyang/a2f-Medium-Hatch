@@ -7,7 +7,7 @@ snippet('header');
 ?>
 
 
-<?php //snippet('sidebar') ?>
+<?php snippet('sidebar') ?>
 
 <!--post-->
 <div class="post">
